@@ -1,0 +1,54 @@
+.Clock-content {
+  width: 100%;
+  background-color: var(--content-box);
+  outline: 1.5px solid var(--content-box-border);
+  border-radius: 0 0 12.5px 12.5px;
+  height: 100%;
+  padding: 10px;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.Clock-subheading {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--body-text-dark);
+}
+
+.Clock-subheading,
+#Clock-display {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Clock-display {
+  background-color: var(--highlight);
+  border-radius: 0 0 7.5px 7.5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--body-text-light);
+}
+
+#Clock-display * {
+  width: -moz-fit-content;
+  width:fit-content;
+  margin: 5px;
+}
+
+#Clock-time {
+  padding: 10px 0;
+}
+
+#Clock-ampm {
+  padding: 1.5px 3px;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  background-color: var(--body-text-light);
+  color: var(--highlight);
+}
