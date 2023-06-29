@@ -25,7 +25,7 @@ function Clock() {
   return (
     <div className="body">
       <h2 className="heading">Clock</h2>
-      <div className="Clock-content">
+      <div className="content Clock-content">
         <p className="Clock-subheading">
           The current time is:
         </p>

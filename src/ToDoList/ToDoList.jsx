@@ -33,7 +33,7 @@ function ToDoList() {
   return (
     <div className="body">
       <h2 className="heading">To-Do List</h2>
-      <div className="ToDo-content">
+      <div className="content ToDo-content">
         <form onSubmit={handleSubmit} id="ToDo-form">
           <input
             className="ToDo-input"
@@ -42,11 +42,11 @@ function ToDoList() {
             onChange={handleChange}
             type="text"
           />
-          <button className="ToDo-button">Add</button>
+          <button type="submit" className="ToDo-button">Add</button>
         </form>
         {toDos.length === 0 ? (
           <p className="ToDo-null">
-            No list found.
+            No list items found.
           </p>
         ) : (
           <div id="ToDo-list">

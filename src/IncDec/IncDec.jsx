@@ -31,7 +31,7 @@ function IncDec() {
   return (
     <div className="body">
       <h1 className="heading">Increment & Decrement</h1>
-      <div className="IncDec-content">
+      <div className="content IncDec-content">
         <p className="IncDec-subheading">Interact with the buttons below.</p>
         <div className="IncDec-subcontent">
           <div className="IncDec-buttons">

@@ -1,11 +1,4 @@
 .Clock-content {
-  width: 100%;
-  background-color: var(--content-box);
-  outline: 1.5px solid var(--content-box-border);
-  border-radius: 0 0 12.5px 12.5px;
-  height: 100%;
-  padding: 10px;
-
   display: grid;
   grid-template-rows: 1fr 1fr;
 }

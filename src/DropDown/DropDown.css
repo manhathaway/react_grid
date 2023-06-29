@@ -1,0 +1,70 @@
+.DropDown-content {
+    overflow-y: auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+}
+
+.DropDown-bar {
+    width: 100%;
+    height: 40px;
+    padding: 7.5px;
+    background-color: var(--body-background);
+    border: 1.5px solid var(--content-box-border);
+
+    display: grid;
+    grid-template-columns: 1fr 65px;
+}
+
+.DropDown-bar * {
+    margin: 0;
+    width: 100%;
+}
+
+.DropDown-bar-grid-parent {
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 10px;
+}
+
+.DropDown-label {
+    font-size: 0.9rem;
+    color: var(--body-text-dark);
+
+    display: flex;
+    align-items: center;
+}
+
+.DropDown-button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--highlight);
+    color: var(--body-text-light);
+}
+
+.DropDown-button:hover {
+    background-color: var(--highlight-interaction);
+}
+
+.DropDown-paragraph {
+    width: 100%;
+    padding: 7.5px;
+    font-size: 0.75rem;
+    background-color: var(--highlight);
+    color: var(--body-text-light);
+    font-style: italic;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DropDown-paragraph-down {
+    height: 25px;
+    
+    position: relative;
+    bottom: 2.5px;
+}

@@ -9,7 +9,7 @@ const CityList = () => {
   return (
     <div className="body">
       <h1 className="heading">List of Cities</h1>
-      <div className="CityList-content">
+      <div className="content">
         {items.length === 0 && <p>No list found.</p>}
         <div id="CityList-list">
           {items.map((i, index) => (

@@ -1,11 +1,4 @@
 .ToDo-content {
-  width: 100%;
-  background-color: var(--content-box);
-  outline: 1.5px solid var(--content-box-border);
-  border-radius: 0 0 12.5px 12.5px;
-  height: 100%;
-  padding: 10px;
-
   display: grid;
   grid-template-rows: 35px 95px;
   row-gap: 10px;
@@ -14,6 +7,7 @@
 #ToDo-form {
   display: grid;
   grid-template-columns: 1fr 50px;
+  gap: 10px;
 }
 
 #ToDo-form,
@@ -25,6 +19,7 @@
   border: none;
   padding: 10px;
   background-color: var(--input-textbox);
+  border: 1.5px solid var(--content-box-border);
 }
 
 .ToDo-input,
@@ -63,6 +58,7 @@
 .ToDo-null {
   color: var(--body-text-dark);
   background-color: var(--body-background);
+  border: 1.5px solid var(--content-box-border);
   font-size: 1rem;
   width: 100%;
   border-radius: 0 0 7.5px 7.5px;
@@ -74,7 +70,7 @@
 }
 
 #ToDo-list {
-  overflow-y: scroll;
+  overflow-y: auto;
   border-radius: 0 0 7.5px 7.5px;
   
   display: grid;
@@ -100,6 +96,6 @@
 
 .ToDo-list-label {
   font-size: 0.8rem;
-  margin-left: 10px;
+  margin: 0 10px;
   color: var(--body-text-dark);
 }
