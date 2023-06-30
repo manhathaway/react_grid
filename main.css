@@ -3,14 +3,13 @@
   --heading-background: rgb(210, 215, 225);
   --heading-text: white;
   --body-background: rgb(248, 249, 251);
+  --body-background-interaction: rgb(242, 244, 246);
   --body-text-light: white;
-  --body-text-dark: rgba(180, 185, 195);
+  --body-text-dark: rgb(180, 185, 195);
   --highlight: rgb(130, 145, 170);
   --highlight-interaction: rgb(160, 175, 200);
   --content-box: white;
-  --content-box-border: rgba(200, 205, 215);
-  --input-textbox: rgba(220, 225, 235, 0.2);
-  --input-textbox-interaction: rgb(242, 244, 246);
+  --content-box-border: rgb(200, 205, 215);
 }
 
 ::placeholder {
@@ -32,6 +31,7 @@ body {
   font-family: sans-serif;
   letter-spacing: 0.25px;
   margin: 25px;
+  overflow: hidden;
 }
 
 #root {

@@ -18,7 +18,7 @@
 .ToDo-input {
   border: none;
   padding: 10px;
-  background-color: var(--input-textbox);
+  background-color: var(--body-background);
   border: 1.5px solid var(--content-box-border);
 }
 
@@ -32,7 +32,7 @@
 .ToDo-input:hover,
 .ToDo-input:focus,
 .ToDo-input:active {
-  background-color: var(--input-textbox-interaction);
+  background-color: var(--body-background-interaction);
 }
 
 .ToDo-button {

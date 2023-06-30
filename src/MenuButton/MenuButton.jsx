@@ -14,9 +14,9 @@ function MenuButton() {
                     <button onClick={(() => setTrigger(!trigger))}type="button" className="MenuButton-button"><img className="MenuButton-button-icon" src='src/SVGs/menu_icon.svg' alt="Menu icon."/></button>
                     { trigger && (
                     <div className="MenuButton-options">
-                        <p className="MenuButton-option">Option 1</p>
-                        <p className="MenuButton-option">Option 2</p>
-                        <p className="MenuButton-option">Option 3</p>
+                        <p className="MenuButton-option">-</p>
+                        <p className="MenuButton-option">-</p>
+                        <p className="MenuButton-option">-</p>
                     </div>
                     ) }
                 </div>

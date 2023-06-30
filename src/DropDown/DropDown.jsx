@@ -12,30 +12,30 @@ function DropDown() {
             <div className="content">
                 <div className="DropDown-navbar">
                     <div className="DropDown-nav-column">
-                        <p onMouseEnter={() => setDropDown1(true)} onMouseLeave={() => setDropDown1(false)} className="DropDown-nav-options">Option 1</p>
+                        <p onMouseEnter={() => setDropDown1(true)} onMouseLeave={() => setDropDown1(false)} className="DropDown-nav-options">Option</p>
                         { dropDown1 &&
                         <div onMouseEnter={() => setDropDown1(true)} onMouseLeave={() => setDropDown1(false)} className="DropDown-nav-suboptions">
-                            <button type="submit" className="DropDown-nav-suboption">Suboption 1</button>
-                            <button type="submit" className="DropDown-nav-suboption">Suboption 2</button>
-                            <button type="submit" className="DropDown-nav-suboption">Suboption 3</button>
+                            <button type="submit" className="DropDown-nav-suboption">-</button>
+                            <button type="submit" className="DropDown-nav-suboption">-</button>
+                            <button type="submit" className="DropDown-nav-suboption">-</button>
                         </div> }
                     </div>
                     <div className="DropDown-nav-column">
-                        <p onMouseEnter={() => setDropDown2(true)} onMouseLeave={() => setDropDown2(false)} className="DropDown-nav-options">Option 2</p>
+                        <p onMouseEnter={() => setDropDown2(true)} onMouseLeave={() => setDropDown2(false)} className="DropDown-nav-options">Option</p>
                         { dropDown2 &&
                         <div onMouseEnter={() => setDropDown2(true)} onMouseLeave={() => setDropDown2(false)} className="DropDown-nav-suboptions">
-                            <button type="submit" className="DropDown-nav-suboption">Suboption 1</button>
-                            <button type="submit" className="DropDown-nav-suboption">Suboption 2</button>
+                            <button type="submit" className="DropDown-nav-suboption">-</button>
+                            <button type="submit" className="DropDown-nav-suboption">-</button>
                         </div> }
                     </div>
                     <div className="DropDown-nav-column">
-                    <p onMouseEnter={() => setDropDown3(true)} onMouseLeave={() => setDropDown3(false)} className="DropDown-nav-options">Option 3</p>
+                    <p onMouseEnter={() => setDropDown3(true)} onMouseLeave={() => setDropDown3(false)} className="DropDown-nav-options">Option</p>
                         { dropDown3 &&
                         <div onMouseEnter={() => setDropDown3(true)} onMouseLeave={() => setDropDown3(false)} className="DropDown-nav-suboptions">
-                            <button type="submit" className="DropDown-nav-suboption">Suboption 1</button>
-                            <button type="submit" className="DropDown-nav-suboption">Suboption 2</button>
-                            <button type="submit" className="DropDown-nav-suboption">Suboption 3</button>
-                            <button type="submit" className="DropDown-nav-suboption">Suboption 4</button>
+                            <button type="submit" className="DropDown-nav-suboption">-</button>
+                            <button type="submit" className="DropDown-nav-suboption">-</button>
+                            <button type="submit" className="DropDown-nav-suboption">-</button>
+                            <button type="submit" className="DropDown-nav-suboption">-</button>
                         </div> }
                     </div>
                 </div>
