@@ -1,70 +1,62 @@
-.DropDown-content {
-    overflow-y: auto;
+.DropDown-navbar {
+    width: 100%;
     
-    display: flex;
-    flex-direction: column;
-    gap: 7.5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
 }
 
-.DropDown-bar {
+.DropDown-nav-column {
     width: 100%;
-    height: 40px;
-    padding: 7.5px;
+}
+
+.DropDown-nav-options {
+    width: 100%;
+    height: 25px;
+    text-align: center;
     background-color: var(--body-background);
-    border: 1.5px solid var(--content-box-border);
-
-    display: grid;
-    grid-template-columns: 1fr 65px;
-}
-
-.DropDown-bar * {
-    margin: 0;
-    width: 100%;
-}
-
-.DropDown-bar-grid-parent {
-    width: 100%;
-    
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
-    gap: 10px;
-}
-
-.DropDown-label {
-    font-size: 0.9rem;
     color: var(--body-text-dark);
-
-    display: flex;
-    align-items: center;
-}
-
-.DropDown-button {
-    border: none;
+    border: 1.5px solid var(--content-box-border);
+    font-size: 0.9rem;
     cursor: pointer;
-    background-color: var(--highlight);
-    color: var(--body-text-light);
-}
-
-.DropDown-button:hover {
-    background-color: var(--highlight-interaction);
-}
-
-.DropDown-paragraph {
-    width: 100%;
-    padding: 7.5px;
-    font-size: 0.75rem;
-    background-color: var(--highlight);
-    color: var(--body-text-light);
-    font-style: italic;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.DropDown-paragraph-down {
-    height: 25px;
+.test {
+    overflow: hidden;
+}
+
+.DropDown-nav-options:hover {
+    background-color: var(--input-textbox-interaction);
+}
+
+.DropDown-nav-suboptions {
+    width: 100%;
+    height: 100%;
     
+    display: flex;
+    flex-direction: column;
+
     position: relative;
-    bottom: 2.5px;
+    z-index: 1;
+}
+
+.DropDown-nav-suboption {
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: var(--highlight);
+    color: var(--body-text-light);
+    cursor: pointer;
+}
+
+.DropDown-nav-suboption:not(:last-of-type) {
+    border-bottom: 1.5px solid var(--highlight-interaction);
+}
+
+.DropDown-nav-suboption:hover {
+    background-color: var(--highlight-interaction);
 }

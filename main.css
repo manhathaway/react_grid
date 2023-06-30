@@ -2,7 +2,7 @@
 :root {
   --heading-background: rgb(210, 215, 225);
   --heading-text: white;
-  --body-background: rgba(220, 225, 235, 0.2);
+  --body-background: rgb(248, 249, 251);
   --body-text-light: white;
   --body-text-dark: rgba(180, 185, 195);
   --highlight: rgb(130, 145, 170);
@@ -10,7 +10,7 @@
   --content-box: white;
   --content-box-border: rgba(200, 205, 215);
   --input-textbox: rgba(220, 225, 235, 0.2);
-  --input-textbox-interaction: rgba(220, 225, 235, 0.4);
+  --input-textbox-interaction: rgb(240, 242, 248);
 }
 
 ::placeholder {
