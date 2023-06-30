@@ -3,6 +3,8 @@ import { useState } from 'react';
 
 function MenuButton() {
     const [trigger, setTrigger] = useState(false);
+    const [triggerPg1, setTriggerPg1] = useState(false);
+    const [triggerPg2, setTriggerPg2] = useState(false);
 
     return (
         <div className='body'>
@@ -19,9 +21,11 @@ function MenuButton() {
                     ) }
                 </div>
                 <div className="MenuButton-main">
-                    <p className="MenuButton-main-heading">This is a Heading</p>
-                    <p className="MenuButton-main-paragraph">This is a paragraph. Really, I'm just writing this because I need some content here. Isn't it annoying when you're working on these small projects and you have to take the time to come up with some shit to write down on elements such as these which aren't even the focal point of the component? Whatever, I guess that's just how it is...</p>
-                    <p className="MenuButton-main-paragraph">This is another paragraph. I'm adding this paragraph because I need to verify that the menu button in the top left remains there when scrolling through this element.</p>
+                    <p className="MenuButton-main-heading">Clever Heading Title</p>
+                    <button type="button" onClick={() => setTriggerPg1(!triggerPg1)} className="MenuButton-paragraph-button">{ triggerPg1 ? 'Collapse' : 'Expand' }</button>
+                    { triggerPg1 && <p className="MenuButton-main-paragraph">This is a paragraph. Really, I'm just writing this because I need some content here. Isn't it annoying when you're working on these small projects and you have to take the time to come up with some shit to write down on elements such as these which aren't even the focal point of the component? Whatever, I guess that's just how it is...</p> }
+                    <button type="button" onClick={() => setTriggerPg2(!triggerPg2)} className="MenuButton-paragraph-button">{ triggerPg2 ? 'Collapse' : 'Expand' }</button>
+                    { triggerPg2 && <p className="MenuButton-main-paragraph">This is another paragraph. I'm adding this paragraph because I need to verify that the menu button in the top left remains there when scrolling through this component.</p> }
                 </div>
             </div>
         </div>

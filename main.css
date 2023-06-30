@@ -10,7 +10,7 @@
   --content-box: white;
   --content-box-border: rgba(200, 205, 215);
   --input-textbox: rgba(220, 225, 235, 0.2);
-  --input-textbox-interaction: rgb(240, 242, 248);
+  --input-textbox-interaction: rgb(242, 244, 246);
 }
 
 ::placeholder {
