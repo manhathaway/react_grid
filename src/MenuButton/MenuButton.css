@@ -75,6 +75,7 @@
 }
 
 .MenuButton-main-heading {
+    width: -moz-fit-content;
     width: fit-content;
     margin-top: 20px;
     text-align: center;
