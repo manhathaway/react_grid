@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const CityList = () => {
   const items = ["New York", "San Francisco", "Tokyo", "London", "Perris"];
-  const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
   return (
     <div className="body">
@@ -20,9 +20,10 @@ const CityList = () => {
                   : "CityList-button CityList-inactive"
               }
               key={i}
-              onClick={() => setSelectedIndex(index)}
+              onMouseEnter={() => setSelectedIndex(index)}
+              onMouseLeave={() => setSelectedIndex(null)}
             >
-              {i}
+            {i}
             </button>
           ))}
         </div>

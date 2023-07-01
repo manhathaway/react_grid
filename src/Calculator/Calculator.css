@@ -1,0 +1,22 @@
+.Calculator-content {
+    display: grid;
+    grid-template-rows: 45px 1fr;
+}
+
+.Calculator-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        "-AC   -AC   -DEL    -DIV "
+        " one   two   thr    -MUL "
+        " fou   fiv   six    -ADD "
+        " sev   eig   nin    -SUB "
+        "-DEC   zer  -EQU    -EQU ";
+    grid-template-columns: repeat(3, 1fr) 0.75fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.Calculator-grid * {
+    width: 100%;
+}

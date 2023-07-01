@@ -2,6 +2,8 @@ import './main.css'
 import './src/src.css'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+
+import Calculator from './src/Calculator/Calculator'
 import CityList from './src/CityList/CityList'
 import Clock from './src/Clock/Clock'
 import DropDown from './src/DropDown/DropDown'
@@ -14,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <CityList />
     <Clock />
+    <Calculator />
     <DropDown />
     <MenuButton />
     <IncDec />
