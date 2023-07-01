@@ -19,6 +19,7 @@
   color: var(--body-text-dark);
 }
 
+/*
 .CityList-button:hover {
   background-color: var(--highlight-interaction);
   color: var(--body-text-light);
@@ -28,6 +29,7 @@
 .CityList-button:active {
   color: var(--body-text-light);
 }
+*/
 
 .CityList-button:last-of-type {
   border-radius: 0 0 7.5px 7.5px;

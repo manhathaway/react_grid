@@ -1,7 +1,6 @@
 import './ToDoList.css'
 import { useState } from "react";
 
-let id = 1;
 function ToDoList() {
   const [newItem, setNewItem] = useState("");
   const [toDos, setToDos] = useState([]);
