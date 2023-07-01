@@ -11,11 +11,17 @@ function Clock() {
     setHour((hour) => new Date().getHours()),
       setMin((min) => new Date().getMinutes()),
       setSec((sec) => new Date().getSeconds()),
-      hour > 12 ? setAmpm("PM") : setAmpm("AM");
+      hour >= 12 ? setAmpm("PM") : setAmpm("AM");
   }, 1000);
 
   const convertHour = (num) => {
-    return num > 12 ? (num - 12).toString() : num.toString();
+    if (num == 0) {
+      return (num + 12).toString();
+    } else if (num >= 1 && num <= 12) {
+      return num.toString();
+    } else {
+      return (num - 12).toString();
+    }
   };
 
   const convertMinSec = (num) => {
