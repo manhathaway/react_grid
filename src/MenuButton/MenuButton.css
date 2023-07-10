@@ -59,10 +59,6 @@
     justify-content: center;
 }
 
-.MenuButton-option:not(last-of-type) {
-    border-bottom: 1.5px solid var(--highlight-interaction);
-}
-
 .MenuButton-option:hover {
     background-color: var(--highlight-interaction);
 }
@@ -89,7 +85,7 @@
     padding: 10px 15px;
     text-align: justify;
     color: var(--body-text-dark);
-    background: var(--body-background);
+    background-color: var(--content-box-dark);
     border-radius: 0 0 7.5px 7.5px;
 }
 

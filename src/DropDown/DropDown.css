@@ -49,10 +49,6 @@
     cursor: pointer;
 }
 
-.DropDown-nav-suboption:not(:last-of-type) {
-    border-bottom: 1.5px solid var(--highlight-interaction);
-}
-
 .DropDown-nav-suboption:hover {
     background-color: var(--highlight-interaction);
 }

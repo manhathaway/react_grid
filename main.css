@@ -1,15 +1,17 @@
 /* Styling and grid layout for all grid cells (React components). */
 :root {
-  --heading-background: rgb(210, 215, 225);
+  --heading-background: rgba(80, 104, 80, 0.75);
   --heading-text: white;
-  --body-background: rgb(248, 249, 251);
-  --body-background-interaction: rgb(242, 244, 246);
+  --body-background: rgba(221, 234, 227, 0.5);
+  --body-background-interaction: rgba(221, 234, 227, 1);
   --body-text-light: white;
-  --body-text-dark: rgb(180, 185, 195);
-  --highlight: rgb(130, 145, 170);
-  --highlight-interaction: rgb(160, 175, 200);
-  --content-box: white;
-  --content-box-border: rgb(200, 205, 215);
+  --body-text-dark: rgba(80, 104, 80, 0.75);
+  --content-box: rgba(221, 234, 227, 0.85);
+  --content-box-dark: rgba(80, 104, 80, 0.15);
+  --content-box-border: rgba(80, 104, 80, 0.25);
+  --highlight: rgba(121, 51, 4, 0.75);
+  --highlight-interaction: rgba(121, 51, 4, 0.85);
+  --transparent: rgba(0, 0, 0, 0.00);
 }
 
 ::placeholder {
@@ -31,10 +33,25 @@ body {
   font-family: sans-serif;
   letter-spacing: 0.25px;
   margin: 25px;
+
+  background-image: url('./src/SVGs/green_rings.svg');
+  background-repeat: no-repeat;
 }
 
 #root {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
+}
+
+@media screen and (max-width:790px), (min-width: 2272px) {
+  body {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width:790px) {
+  #root {
+    grid-template-columns: repeat(1, minmax(350px, 1fr));
+  }
 }
