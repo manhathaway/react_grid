@@ -3,7 +3,7 @@
   cursor: pointer;
   font-size: 1rem;
   border-radius: 0 0 7.5px 7.5px;
-  background-color: var(--content-box-dark);
+  background-color: var(--content-box-layer);
 }
 
 #CityList-list,

@@ -85,7 +85,7 @@
     padding: 10px 15px;
     text-align: justify;
     color: var(--body-text-dark);
-    background-color: var(--content-box-dark);
+    background-color: var(--content-box-layer);
     border-radius: 0 0 7.5px 7.5px;
 }
 

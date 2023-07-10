@@ -31,11 +31,11 @@
 
     display: grid;
     grid-template-areas:
-        "-AC   -EQU  -DEL   -MUL "
+        "-AC   -AC  -DEL   -MUL "
         " one   two   thr   -DIV "
         " fou   fiv   six   -ADD "
         " sev   eig   nin   -SUB "
-        " nu1   zer   nu2   -DEC ";
+        " zer   zer  -DEC   -EQU ";
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 1px;
@@ -67,16 +67,10 @@
     color: var(--highlight)
 }
 
-#nu1 {
+#zer {
     border-radius: 0 0 0 7.5px;
 }
 
-#nu1,
-#nu2 {
-    background-color: var(--heading-background);
-    cursor: unset;
-}
-
-#DEC {
+#EQU {
     border-radius: 0 0 7.5px 0;
 }

@@ -7,7 +7,7 @@
   --body-text-light: white;
   --body-text-dark: rgba(80, 104, 80, 0.75);
   --content-box: rgba(221, 234, 227, 0.85);
-  --content-box-dark: rgba(80, 104, 80, 0.15);
+  --content-box-layer: rgba(231, 244, 237, 0.35);
   --content-box-border: rgba(80, 104, 80, 0.25);
   --highlight: rgba(121, 51, 4, 0.75);
   --highlight-interaction: rgba(121, 51, 4, 0.85);
